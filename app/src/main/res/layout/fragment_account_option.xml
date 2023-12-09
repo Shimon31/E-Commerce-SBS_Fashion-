@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountOptionFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/brandNameTV"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:drawableStart="@drawable/ic_kleine_shape"
+            android:drawablePadding="6dp"
+            android:text="SBS Fashion"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRightAddressForShopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="@string/rightAddress"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/brandNameTV" />
+
+        <TextView
+            android:id="@+id/tvQuality"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/qulity"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/tvRightAddressForShopping"
+            app:layout_constraintStart_toStartOf="@id/tvRightAddressForShopping"
+            app:layout_constraintTop_toBottomOf="@id/tvRightAddressForShopping"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRegister"
+            style="@style/blueButtonStyle"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="@id/tvQuality"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@id/tvQuality"
+            app:layout_constraintTop_toBottomOf="@id/tvQuality"
+            app:layout_constraintVertical_bias="0.516" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogin"
+            android:layout_width="@dimen/smallButtonWidth"
+            android:layout_height="@dimen/smallButtonHeight"
+            style="@style/whiteButtonStyle"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/buttonRegister"
+            app:layout_constraintStart_toStartOf="@id/tvQuality"
+            app:layout_constraintEnd_toEndOf="@id/tvQuality"
+            android:text="Login"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

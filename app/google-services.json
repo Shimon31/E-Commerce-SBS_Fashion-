@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594403597627",
+    "project_id": "sbs-fashion",
+    "storage_bucket": "sbs-fashion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594403597627:android:d3bf6cbc353bcb2bb8eb1e",
+        "android_client_info": {
+          "package_name": "com.sbs.sbsfshion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK8Ge9cTiIfn5G_B76YmxPoL3hHEK-80E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
